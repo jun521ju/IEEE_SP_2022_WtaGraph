@@ -1,0 +1,8 @@
+trash/*
+tmp/*
+*/__pycache__/*
+*feat.npy
+*label.npy
+*.pickle
+*.edgelist
+test.py
