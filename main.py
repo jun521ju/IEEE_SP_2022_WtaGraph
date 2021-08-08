@@ -41,7 +41,7 @@ print(args)
 ### Mode 1: regular training 
 ### with the default args, you will train a model on the full graph
 
-start_train(args)
+# start_train(args)
 
 
 ### Mode 2: cross-validation training 
@@ -55,7 +55,7 @@ start_train(args)
 ### Mode 1: eval a pre-trained model on the full training graph
 ### with the default args, you will evaluate the pre-trained model on the full graph
 
-# eval_saved_model(args)
+eval_saved_model(args)
 
 
 ### Mode 2: eval  a pre-trained model inductively on unseen (during training) edges

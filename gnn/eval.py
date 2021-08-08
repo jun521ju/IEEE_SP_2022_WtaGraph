@@ -192,7 +192,7 @@ def eval_model_inductive(args):
         ## with above code, we added neighbor nodes/edges (if any) to the testing graph
         ## however, we only want to predict the edges of current testing site, not those neighbors 
         ## So, below we use the test_mask to achieve this goal
-        print('After adding neighbors, the graph: ', g)
+        print('After adding neighbors, the graph: ', g, '\n')
 
         nf = g.ndata.pop('nf')
         ef = g.edata.pop('ef')
@@ -210,9 +210,9 @@ def eval_model_inductive(args):
         ## here i am not printing the performace immediately as there might be ZeroDivisionError
         ## instead, i put predictions of each testing site into a list
         results += [(eid, edge_labels[idx].item(), predictions[idx].item()) for idx, eid in enumerate(test_sites_map[site_id])]
-        print('\n')
-        if ct == 15: break
-        ct+=1
+        # print('\n')
+        # if ct == 15: break
+        # ct+=1
         
     ### we completed predict edges in each testing site;
     ### meanwhile, we have raw predictions saved in the results list
