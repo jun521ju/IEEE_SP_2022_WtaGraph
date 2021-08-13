@@ -6,7 +6,7 @@
  
  ## Instructions
  #### Download Our Dataset
- We shared our dataset (including two prebuilt graphs, node and edge features, and edge labels) [here](https://zhiju.me).
+ We shared our dataset (including two prebuilt graphs, node and edge features, and edge labels) on [Zenodo](https://zenodo.org/record/5166790).
  Please download the dataset and put them in the subfolders of `data` folder as indicated by those files ending with `.placeholder`.
  
  #### Understand The Code
